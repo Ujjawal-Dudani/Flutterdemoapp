@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ndwithsmenu/views/dashboard.dart';
-import 'package:ndwithsmenu/views/find_my_battery.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "navigation drawer with submenu",
-      home: Find_My_Battery(),
+      home: DashboardScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

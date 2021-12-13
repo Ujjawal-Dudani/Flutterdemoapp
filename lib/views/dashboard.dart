@@ -79,10 +79,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ExpansionTile(
               title: const Text("Warranty Request"),
               leading: const Icon(Icons.home, color: Colors.red),
-              childrenPadding: const EdgeInsets.all(20),
+              childrenPadding: const EdgeInsets.symmetric(vertical: 0.0,horizontal: 12.0),
               children: <Widget>[
                 ListTile(
-                  title: const Text("Manage Warranty Request"),
+                  title: const Text("Manage Warranty Request",),
                   leading: const Icon(Icons.home, color: Colors.red),
                   onTap: () {
                     // Update the state of the app
@@ -112,7 +112,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   },
                 ),
                 ListTile(
-                  title: const Text("Manage Unsold Battery Claim"),
+                  title: const Text("Manage Unsold Battery Claim",maxLines: 1,),
                   leading: const Icon(Icons.home, color: Colors.red),
                   onTap: () {
                     // Update the state of the app
@@ -126,7 +126,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ExpansionTile(
               title: const Text("Dealers"),
               leading: const Icon(Icons.home, color: Colors.red),
-              childrenPadding: const EdgeInsets.all(20),
+              childrenPadding: const EdgeInsets.symmetric(vertical: 0.0,horizontal: 12.0),
               children: <Widget>[
                 ListTile(
                   title: const Text("Add Dealer"),
@@ -173,7 +173,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ExpansionTile(
               title: const Text("My Sales Orders"),
               leading: const Icon(Icons.home, color: Colors.red),
-              childrenPadding: const EdgeInsets.all(20),
+              childrenPadding: const EdgeInsets.symmetric(vertical: 0.0,horizontal: 12.0),
               children: <Widget>[
                 ListTile(
                   title: const Text("Add Sales Orders"),
@@ -200,7 +200,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ExpansionTile(
               title: const Text("My Dispatches"),
               leading: const Icon(Icons.home, color: Colors.red),
-              childrenPadding: const EdgeInsets.all(20),
+              childrenPadding: const EdgeInsets.symmetric(vertical: 0.0,horizontal: 12.0),
               children: <Widget>[
                 ListTile(
                   title: const Text("Add Dispatches"),
@@ -247,7 +247,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ExpansionTile(
               title: const Text("My Sales Return"),
               leading: const Icon(Icons.home, color: Colors.red),
-              childrenPadding: const EdgeInsets.all(20),
+              childrenPadding: const EdgeInsets.symmetric(vertical: 0.0,horizontal: 12.0),
               children: <Widget>[
                 ListTile(
                   title: const Text("Add Sales Return"),
@@ -294,7 +294,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ExpansionTile(
               title: const Text("Account"),
               leading: const Icon(Icons.home, color: Colors.red),
-              childrenPadding: const EdgeInsets.all(20),
+              childrenPadding: const EdgeInsets.symmetric(vertical: 0.0,horizontal: 12.0),
               children: <Widget>[
                 ListTile(
                   title: const Text("Notifications"),
@@ -376,6 +376,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
+                              Padding(
+                                padding: EdgeInsets.all(5.5),
+                                child: LinearProgressIndicator(
+                                  value: 90,
+                                  semanticsLabel: "first progress bar",
+                                  color: Colors.orangeAccent,
+                                ),
+                              ),
                               ListTile(leading: Text("62.5"),trailing: Text("of 64 Requests") ,),
                               Expanded(
                                 child: ListTile(
@@ -402,6 +410,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
+                              Padding(
+                                padding: EdgeInsets.all(5.5),
+                                child: LinearProgressIndicator(
+                                  value: 90,
+                                  semanticsLabel: "first progress bar",
+                                  color: Colors.lightGreen,
+                                ),
+                              ),
                               ListTile(leading: Text("37.5"),trailing: Text("of 64 Requests") ,),
                               Expanded(
                                 child: ListTile(
@@ -428,6 +444,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
+                              Padding(
+                                padding: EdgeInsets.all(5.5),
+                                child: LinearProgressIndicator(
+                                  value: 90,
+                                  semanticsLabel: "first progress bar",
+                                  color: Colors.redAccent,
+                                ),
+                              ),
                                ListTile(leading: Text("0",style: TextStyle(fontSize: 30.0),),trailing: Text("of 64 Requests") ,),
                                Expanded(
                                  child: ListTile(
@@ -460,20 +484,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 margin: const EdgeInsets.all(5.0),
                 child: Card(
                   child:Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Padding(
-                          padding: EdgeInsets.all(3.0),
+                          padding: EdgeInsets.all(1.0),
                           child: ListTile(
                             leading: Text("5",style: TextStyle(fontSize: 35.0,color: Colors.red)),
                             trailing: Icon(Icons.home,color: Colors.red,size: 40.0,),
                           ),
                         ),
                         Expanded(child: Padding(
-                          padding: EdgeInsets.symmetric(vertical: 1.0,horizontal: 20.0),
-                          child: Text("NO.OF REQUESTS",style: TextStyle(fontSize: 23.0),),
+                          padding: EdgeInsets.symmetric(vertical: 14.0,horizontal: 20.0),
+                          child: Text("NO.OF REQUESTS",style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),),
                         ))
                       ],
                     ),
