@@ -357,7 +357,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // for statics list cards in horizontal List
-            const Text("Statistics",style: TextStyle(fontSize: 20.0),),
+            const Text("Statistics",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w400),),
             const SizedBox(
                 height: 10
             ),
@@ -379,7 +379,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               Padding(
                                 padding: EdgeInsets.all(5.5),
                                 child: LinearProgressIndicator(
-                                  value: 90,
+                                  value: 100,
                                   semanticsLabel: "first progress bar",
                                   color: Colors.orangeAccent,
                                 ),
@@ -398,7 +398,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ),
                         color: Colors.white60,
-                        elevation: 5.0,
+                        elevation: 2.0,
                       ),
                     ),
                     Container(
@@ -432,7 +432,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ),
                         color: Colors.white60,
-                        elevation: 5.0,
+                        elevation: 2.0,
                       ),
                     ),
                     Container(
@@ -466,14 +466,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ),
                         color: Colors.white60,
-                        elevation: 5.0,
+                        elevation: 2.0,
                       ),
                     )
                   ],
                 ),
             ),
             //for warranty Request card
-            const Text("Warranty Request From Dealer",style: TextStyle(fontSize: 20.0),),
+            const Text("Warranty Request From Dealer",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w400),),
             const SizedBox(
                 height: 10
             ),
@@ -496,14 +496,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ),
                         Expanded(child: Padding(
-                          padding: EdgeInsets.symmetric(vertical: 14.0,horizontal: 20.0),
-                          child: Text("NO.OF REQUESTS",style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),),
+                          padding: EdgeInsets.symmetric(vertical: 15.0,horizontal: 15.0),
+                          child: Text("NO.OF REQUESTS",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w400),),
                         ))
                       ],
                     ),
                   ),
                   color: Colors.white60,
-                  elevation: 5.0,
+                  elevation: 2.0,
                 ),
               ),
             ),
@@ -513,7 +513,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: Divider(height: 2.0,thickness: 1.0,color: Colors.black,),
             ),
             //for  Check Battery Warranty Card
-            const Text("Check Battery Warranty ",style: TextStyle(fontSize: 20.0),),
+            const Text("Check Battery Warranty ",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w400),),
             const SizedBox(
                 height: 10
             ),
@@ -572,7 +572,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   SizedBox(width: 10),
                                   Text(
                                     'OR',
-                                    style: TextStyle(color: Color(0xff818181), fontWeight: FontWeight.w500),
+                                    style: TextStyle(color: Color(0xff818181), fontWeight: FontWeight.w400),
                                   ),
                                   SizedBox(width: 10),
                                   Expanded(
@@ -607,7 +607,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
                   ),
                   color: Colors.white60,
-                  elevation: 5.0,
+                  elevation: 2.0,
                 ),
               ),
             ),
